@@ -14,30 +14,35 @@ composer require aweitian/filesystem
 
 ####创建目录
 ```
-filesystem::createDir('Home/View');
+Filesystem::createDir('Home/View');
 ```
 
 ####删除目录
 ```
-filesystem::delDir('Home');
+Filesystem::delDir('Home');
 ```
 
 ####复制目录
 ```
-filesystem::copyDir('a','b');
+Filesystem::copyDir('a','b');
+```
+
+####新建文件
+```
+Filesystem::touch($file);
 ```
 
 ####删除文件
 ```
-filesystem::delFile($file);
+Filesystem::delFile($file);
 ```
 
 ####目录大小
 ```
-filesystem::size('Home');
+Filesystem::size('Home');
 ```
 
 ####复制文件
 ```
-filesystem::copyFile('README.md', 'tests/README.md')
+Filesystem::copyFile('README.md', 'tests/README.md')
 ```

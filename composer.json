@@ -1,13 +1,13 @@
 {
-  "name": "aweitian/dir",
-  "description": "目录操作",
+  "name": "aweitian/filesystem",
+  "description": "文件系统操作",
   "type": "project",
   "keywords": [
     "aweitian",
     "tiananwei",
-    "dir"
+    "filesystem"
   ],
-  "homepage": "https://github.com/aweitian/dir",
+  "homepage": "https://github.com/aweitian/filesystem",
   "license": "MIT",
   "authors": [
     {
@@ -25,7 +25,7 @@
   "autoload": {
     "files": [],
     "psr-4": {
-      "tian\\": "src/"
+      "Tian\\": "src/"
     }
   }
 }
