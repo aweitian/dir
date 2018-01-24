@@ -14,21 +14,23 @@ composer require aweitian/filesystem
 
 ####创建目录
 ```
-Filesystem::createDir('Home/View');
+Filesystem::createDir($dir, $auth = 0755, $recursive = true)
 ```
 
 ####删除目录
 ```
-Filesystem::delDir('Home');
+Filesystem::delDir($dir, $delself = true);
 ```
 
 ####复制目录
 ```
-Filesystem::copyDir('a','b');
+Filesystem::copyDir($old, $new, $copyself = false);
 ```
 
 ####新建文件
 ```
+copyDir("/aa/bb/c","/dd")  把c下所有的文件CP到/DD下
+copyDir("/aa/bb/c","/dd",true)  把c下所有的文件CP到/DD/c下
 Filesystem::touch($file);
 ```
 
@@ -44,5 +46,6 @@ Filesystem::size('Home');
 
 ####复制文件
 ```
-Filesystem::copyFile('README.md', 'tests/README.md')
+
+Filesystem::copyFile($file, $to, $force = true)
 ```
